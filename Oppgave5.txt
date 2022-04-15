@@ -1,0 +1,10 @@
+Oppgave 5:
+Dersom det kommer veldig mange kall til API-en kan tregheten dette medfører lindres med “API throttling”.
+Det vil si å sette grenser for hvor ofte mye av ressursene som kan bli brukt, enten av hver enkelt bruker, eller totalt.
+En veldig enkel løsning med “API throttling” kunne vært å sette en minimum tidsperiode mellom hvert kall fra en bruker,
+da det er noen brukere som gjør veldig mange kall.
+Dette gir beskyttelse fra DOS angrep, og gjør API-en mer stabil.
+
+Det går også an å kjøre tjenesten med “Load balancing”, altså fordele tjenesten på flere enheter.
+Disse kan alle kjøres på samme maskin via en docker løsning, eller på flere maskiner. Nettverk trafikken
+blir da jevnt fordelt på enhetene og API-en blir mer stabil på en måte som er usynlig for brukeren.
