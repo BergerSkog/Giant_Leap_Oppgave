@@ -33,12 +33,17 @@ class OppgaverTest {
     @Test
     void  Oppgave4Test() {
         Oppgaver parkering = new Oppgaver();
-        assertEquals(782, parkering.oppgave_4("m3", "torsdag", 390, 1559));
+        assertEquals(782, parkering.oppgave_4("m3", "torsdag", 390, 800));
     }
     @Test
     void  Oppgave4TidTest() {
         Oppgaver parkering = new Oppgaver();
         assertEquals(1173, parkering.oppgave_4("m3", "torsdag", 390, 1900));
+    }
+    @Test
+    void  Oppgave4OverKlokka4Test() {
+        Oppgaver parkering = new Oppgaver();
+        assertEquals(1167, parkering.oppgave_4("m3", "torsdag", 390, 1559));
     }
 
 }

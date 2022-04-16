@@ -8,6 +8,11 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import static java.lang.Integer.parseInt;
 
+
+/*
+Spring kontroller som styrer API-en
+ */
+
 @RestController
 public class Parkeringscontroller {
     private static final String template = "Hello, %s!";

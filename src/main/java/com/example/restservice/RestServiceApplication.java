@@ -7,6 +7,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 
+
+/*
+classen som starter API-en
+ */
+
 @ComponentScan(basePackageClasses= Parkeringscontroller.class)
  public class RestServiceApplication {
 

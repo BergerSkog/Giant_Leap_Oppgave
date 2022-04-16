@@ -2,6 +2,10 @@ package main.java.com.example.restservice;
 
 
 public class Parkering {
+
+    /*
+    Class som holder data om parkeringen som kan vises med JSON i API-en
+     */
     private final long id;
     private final String sone;
     private final String ukedag;
